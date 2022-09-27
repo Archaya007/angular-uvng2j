@@ -15,6 +15,7 @@ export class StudentService {
     return this.httpClient.delete('http://localhost:8080/students/' + id);
   }
   public createStudentService(student) {
+    console.log(JSON.stringify(student))
     const headers = { 'content-type': 'application/json' };
     return this.httpClient.post(
       'http://localhost:8080/students/',
@@ -24,7 +25,8 @@ export class StudentService {
       }
     );
   }
-  public updateStudentService(id, student) {
+ public updateStudentService(id, student) {
+  console.log(JSON.stringify(student))
     const headers = { 'content-type': 'application/json' };
     return this.httpClient.put(
       'http://localhost:8080/students/' + id,
