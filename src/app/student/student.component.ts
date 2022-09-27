@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Student } from './student';
 import { StudentService } from './student.service';
 @Component({
-  selector: 'app-stid: any;
-udent',
+  selector: 'app-student',
   templateUrl: './student.component.html',
   styleUrls: ['./student.component.css'],
 })
